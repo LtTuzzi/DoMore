@@ -10,7 +10,13 @@ public class DoMore {
 
         Scanner scanner = new Scanner(System.in);
 
-        int myChoice = scanner.nextInt();
+        if (args.length < 1){
+            System.out.println("Usage: java DoMore <myChoice>");
+            return;
+        }
+        
+    int myChoice = Integer.parseInt(args[1]);
+       
     if(myChoice == 1){
         System.out.println("add");
     }
