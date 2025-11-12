@@ -14,8 +14,8 @@ public class DoMore {
 
         if (args.length < 1){
             System.out.println("Usage: java DoMore <myChoice>");
-            return;
-        }
+            scanner.close();
+            return;    }
         
     int myChoice = Integer.parseInt(args[0]);
 
@@ -29,6 +29,6 @@ public class DoMore {
         System.out.println("update");
     }
 
-
+ scanner.close();
     }
 }
