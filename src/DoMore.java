@@ -1,3 +1,5 @@
+
+
 import java.util.Scanner;
 
 public class DoMore {
@@ -15,8 +17,8 @@ public class DoMore {
             return;
         }
         
-    int myChoice = Integer.parseInt(args[1]);
-       
+    int myChoice = Integer.parseInt(args[0]);
+
     if(myChoice == 1){
         System.out.println("add");
     }
